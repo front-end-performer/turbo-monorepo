@@ -22,7 +22,7 @@ importers:
     dependencies:
       '@acrobat-component/button':
         specifier: workspace:*
-        version: link:../../packages/button
+        version: link:../../packages/components/button
       lit:
         specifier: ^3.2.1
         version: 3.2.1
@@ -65,7 +65,7 @@ importers:
     dependencies:
       '@acrobat-component/button':
         specifier: workspace:*
-        version: link:../../packages/button
+        version: link:../../packages/components/button
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -107,7 +107,7 @@ importers:
         specifier: ^6.0.3
         version: 6.0.5(@types/node@20.17.6)
 
-  packages/button:
+  packages/components/button:
     dependencies:
       lit:
         specifier: ^3.2.1
@@ -115,10 +115,10 @@ importers:
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
-        version: link:../../tooling/eslint-config
+        version: link:../../../tooling/eslint-config
       '@repo/typescript-config':
         specifier: workspace:*
-        version: link:../../tooling/typescript-config
+        version: link:../../../tooling/typescript-config
 
   packages/ui:
     dependencies:
