@@ -3,21 +3,21 @@ import { customElement, property } from "lit/decorators.js";
 
 // Define the `args` interface for TypeScript
 export interface AcrobatButtonArgs {
-  primary: boolean;
-  backgroundColor: string;
-  size: "small" | "medium" | "large";
-  label: string;
-  onClick: () => void;
+  primary?: boolean;
+  backgroundColor?: string;
+  size?: "small" | "medium" | "large";
+  label?: string;
+  onClick?: () => void;
 }
 
 @customElement("acrobat-button")
 export class AcrobatButton extends LitElement {
   // Use @property decorator correctly and avoid setting default values outside the decorator
-  @property({ type: Boolean }) primary = false; // Property with default value
-  @property({ type: String }) backgroundColor = ""; // Property with default value
-  @property({ type: String }) size = "medium"; // Property with default value
-  @property({ type: String }) label = "Acrobat button"; // Property with default value
-  @property({ type: Function }) onClick: () => void = () => {}; // Optional function
+  @property({ type: Boolean }) accessor primary = false; // Property with default value
+  @property({ type: String }) accessor backgroundColor = ""; // Property with default value
+  @property({ type: String }) accessor size = "medium"; // Property with default value
+  @property({ type: String }) accessor label = "Acrobat button"; // Property with default value
+  @property({ type: Function }) accessor onClick: () => void = () => {}; // Optional function
 
   static styles = css`
     .storybook-button {
