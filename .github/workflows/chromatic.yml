@@ -9,5 +9,5 @@ jobs:
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: chpt_19ae80df1c9580a
-          workingDir: aps/docs
+          workingDir: packages/components/button
           onlyChanged: true # 👈 Required option to enable TurboSnap
