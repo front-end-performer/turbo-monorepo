@@ -23,6 +23,7 @@
     "@storybook/test": "8.4.7",
     "@storybook/web-components": "8.4.7",
     "@storybook/web-components-vite": "8.4.7",
+    "chromatic": "^11.22.2",
     "storybook": "8.4.7",
     "typescript": "~5.6.2",
     "vite": "^6.0.3"
